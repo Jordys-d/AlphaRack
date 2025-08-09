@@ -198,7 +198,7 @@ background-image: url("C:\Users\Marvi\Downloads\payment gateway\images\tienda-de
 }
 
 @media (max-width: 768px) {
-    .container {
+    form {
         width: 70%;
         padding: 20px 30px;
     }
@@ -229,12 +229,12 @@ background-image: url("C:\Users\Marvi\Downloads\payment gateway\images\tienda-de
 }
 
 @media (max-width: 480px) {
-    .container {
+    form {
         width: 95%;
         padding: 15px 20px;
     }
 
-    .Wrapper h1 {
+    .container h1 {
         font-size: 28px;
     }
 
