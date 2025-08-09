@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --clr-main: #044155;
+    --clr-main-light: #785ce9;
+    --clr-white: #ececec;
+    --clr-gray: #f2f1f1;
+    --clr-red: #961818;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navar{
+    width: 100%;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    background-color: var(--clr-main);
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+.navar ul{
+    display: flex;
+    justify-content: end;
+}
+
+.navar li a{
+    list-style: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffe601;
+}
+
+.navar li a:hover{
+    background-color: #03536e;
+    transition: .4s ease;
+}
+  
+.container {
+  position: relative;
+  padding: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.img2 {
+  background-color: #ffffff;
+  display: grid;
+  place-items: center;
+}
+
+.img2 img {
+  padding: 50px;
+  height: 900px;
+  width: 1000px;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-image: url(../images/bg05.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.container .texto {  
+  width: 70%;
+  margin: 0 auto;
+  border: none;
+  padding: 0 10px;
+  border-radius: 30px;
+  background-color: var(--clr-main);
+  opacity: .95;
+  backdrop-filter: blur(10px);
+}
+
+h2 {
+  color: #ffe601;
+  font-size: 6rem;
+  padding: 20px 0 0 50px;
+  margin: 0 0 10px 0;
+}
+
+p {
+  color: #ffffff;
+  font-size: 3rem;
+  padding: 0 0 20px 50px;
+  margin: 10px 0 0 0;
+}
+
+.container .button {
+  width: 70%;
+  display: flex;
+  place-content: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+
+.container .button button {
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.container .button button:hover {
+  background-color: var(--clr-main);
+}
+
+.container button a {
+  color: #2696b5;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.container button a:hover{
+  color: #ffe601;
+}
+
+.content {
+  background-color: #faf9f9;
+  margin-top: 0;
+}
+
+.icon {
+  width: 100vw;
+  background-color: #003d9e;
+  padding: 250px 0;
+  border: none;
+  margin: 0;
+  display: flex;
+  place-content: center;
+  gap: 120px;
+  text-align: center;
+}
+
+.icon-img i {
+  color: white;
+  font-size: 20rem;
+  padding: 20px;
+}
+
+.icon-img p {
+  text-align: center;
+  padding: 20px;
+}
+
+.content p {
+  width: 90%;
+  background-color: #fff;
+  margin: 0 auto;
+  color: hsl(0, 44%, 15%);
+  padding: 20px 40px;
+  font-size: 25px;
+  top: 0;
+  text-align: justify;
+}
+
+.content-text .top {
+  border-radius: 20px 20px 0 0;
+  padding-top: 100px;
+}
+
+.content-text .bottom {
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 100px;
+}
+
+.footer footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #003d9e;
+}
+
+.footer .ficon {
+  width: max-content;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  color: #ffffff;
+  display: grid;
+  align-items: end;
+}
+
+.footer .fp p {
+  text-align: center;
+  padding: 0;
+  width: max-content;
+  font-size: 18px;
+}
+
+@media (max-width: 920px) {
+  .container .texto {
+    width: 90%;
+    text-align: left;
+    padding: 2px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    text-align: left;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}

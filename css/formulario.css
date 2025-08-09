@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'rubik', arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    align-items: center;
+    align-items: center;
+    background: url(https://images.ctfassets.net/h9i30ml9c3lu/PuwfRwvNfCJgsY9FCCoqD/1fb36c668152b2f16e5157c33b64db3c/hannah-morgan-ycVFts5Ma4s-unsplash__1_.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navar{
+       width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color:transparent;
+    position: sticky;
+    z-index: 1000;
+}
+
+.navar ul{
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    padding: 0px 10px;   
+}
+
+.navar li a{
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navar li a:hover{
+    background-color: rgb(0, 0, 0, 1);
+    transition: .4s ease;
+}
+
+
+.Wrapper {
+    width: 35%;
+    margin: 0 auto;
+    height: 80%;
+    background: transparent;
+    color: white;
+    border-radius: 1rem;
+    padding: 30px 50px; 
+    backdrop-filter: blur(80px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-top: 2rem;
+    
+}
+
+.Wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.Wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10 rgb(0, 0, 0, 1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333; 
+    font-weight: 600;
+}
+
+.Wrapper .register-link { 
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+.Wrapper .input-box {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, 2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+    overflow: hidden;
+
+} 
+
+.input-box textarea {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, 2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+    overflow: hidden;
+
+}
+
+.input-box input::placeholder, .input-box textarea::placeholder {
+    color: white;
+    text-align: start;
+    justify-content: center;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    font-size: 20px;
+    transform: translate(-50%);
+}
+
+.Wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+
+}
+
+
+legend { 
+    font-size: 15px;
+    text-align: center;
+}
+
+.rating-container { 
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255, 253, 253);
+    border-radius: 40px;
+    font-size: 12px;
+    color: rgb(246, 248, 247);
+    padding: 20px 10px;  
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+} 

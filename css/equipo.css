@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --clr-main: #044155;
+    --clr-main-light: #785ce9;
+    --clr-white: #ececec;
+    --clr-gray: #f2f1f1;
+    --clr-red: #961818;
+    --clr-yellow: #ffe601;
+    --clr-green:#03536e;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navar{
+    width: 100%;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    background-color: var(  --clr-main);
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+}
+
+.navar ul{
+    display: flex;
+    justify-content: end;
+}
+
+.navar li a:hover{
+    background-color: #03536e;
+    transition: .4s ease;
+}
+
+.navar li a{
+    list-style: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffe601;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+
+}
+
+h1{
+    width: 100%;
+    font-size: 5rem;
+    font-weight: 650;
+    text-align: center;
+    padding: 50px 50px 0 50px;
+    margin-bottom: 0;
+}
+
+.body {
+    width: 100%;
+    height: 600px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        gap: 10px 18px;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 330px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    position: relative;
+    transition: .5s ease;
+}
+
+.profile-card:hover{
+    transform: scale(1.04);
+}
+
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: var(--clr-main);
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: var(--clr-main); 
+    padding: 3px;
+    margin-bottom: 32px;
+}
+
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.profile-card .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.buttons .button:hover{
+    background-color: #117ca0;
+}
+
+.profile-card .button{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: var(--clr-green);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.data:last-child{
+    border-right: none;
+}
+
+@media  screen and (max-width: 1500px) {
+    
+    .navar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px 0;
+    }
+
+    h1{
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .body{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 10px;
+    }
+
+    .profile-card:hover{
+        transform: scale(1.04);
+    }
+}

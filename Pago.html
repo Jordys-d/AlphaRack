@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pago.css">
+    <title>Formulario de Pago</title>
+
+</head>
+<body>
+
+       <header class="navar">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="comprar.html">Comprar</a></li>
+        <li><a href="equipo.html">Nosotros</a></li>
+        <li><a href="formulario.html">Comentarios</a></li>
+      </ul>
+    </header>
+
+<div class="container">
+
+    <form id="form-pago">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Formulario de Pago</h3>
+
+                <div class="inputBox">
+                    <span>Nombre completo :</span>
+                    <input type="text" placeholder="john deo" required>
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="email" placeholder="example@example.com" required>
+                </div>
+                <div class="inputBox">
+                    <span>Dirección :</span>
+                    <input type="text" placeholder="" required>
+                </div>
+                <div class="inputBox">
+                    <span>País:</span>
+                    <input type="text" placeholder="Nicaragua" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Ciudad:</span>
+                        <input type="text" placeholder="Managua" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Código postal :</span>
+                        <input type="text" placeholder="123 456" required>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Pago</h3>
+
+                <div class="inputBox">
+                    <span>Tarjetas Aceptadas :</span>
+                    <img src="images/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Nombre en la Tarjeta :</span>
+                    <input type="text" placeholder="mr. john deo" required>
+                </div>
+                <div class="inputBox">
+                    <span>Número de Tarjeta :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444" required>
+                </div>
+                <div class="inputBox">
+                    <span>Mes de vencimiento:</span>
+                    <input type="text" placeholder="Enero" required>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Año/venc :</span>
+                        <input type="number" placeholder="2025" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234" required>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <button type="submit" class="submit-btn">Confirmar pago</button> 
+
+    </form>
+
+    <!-- Mensaje debajo del formulario -->
+    <p id="mensaje">¡Gracias por tu compra!</p>
+
+</div>    
+
+<script>
+    document.getElementById("form-pago").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita recargar la página
+        document.getElementById("mensaje").style.display = "block";
+        this.reset(); // Limpia el formulario
+        setTimeout(() => {
+            document.getElementById("mensaje").style.display = "none";
+        }, 6000); // Oculta el mensaje después de 4 segundos
+    });
+</script>
+
+</body>
+</html>
