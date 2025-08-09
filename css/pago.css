@@ -189,20 +189,74 @@ background-image: url("C:\Users\Marvi\Downloads\payment gateway\images\tienda-de
         }
 
 
-@media screen and (max-width: 749px) {
+/** Media Queries **/
+@media (max-width: 768px) {
 
-    .navar ul{
-       display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 5rem; 
-    }
+  .container {
+    padding: 15px;
+  }
 
-    .container{
-        display: flex;
-        flex-direction: column;
-        gap: 10px 0;
-    }
+  .container form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .container form .row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .container form .row .col {
+    width: 100%;
+  }
+
+  .container form .row .col .flex {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navar li a {
+    padding: 10px 15px;
+    font-size: 1rem;
+  }
+
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    padding: 10px;
+  }
+
+  .container form {
+    padding: 10px;
+  }
+
+  .container form .submit-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .container form .row .col .inputBox input {
+    font-size: 14px;
+  }
+
+  .container form .row .col .title {
+    font-size: 18px;
+  }
+
+  .navar li a {
+    font-size: 0.95rem;
+  }
+}
 
     
