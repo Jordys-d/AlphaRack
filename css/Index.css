@@ -232,6 +232,8 @@ p {
     .navar ul{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 10px
     }
     
@@ -251,4 +253,5 @@ p {
     font-size: 1.5rem;
   }
 }
+
 
