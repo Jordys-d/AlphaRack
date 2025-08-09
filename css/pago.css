@@ -187,3 +187,22 @@ background-image: url("C:\Users\Marvi\Downloads\payment gateway\images\tienda-de
             margin-left: auto;
             margin-right: auto;
         }
+
+
+@media screen and (max-width: 749px) {
+
+    .navar ul{
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5rem; 
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0;
+    }
+
+    
