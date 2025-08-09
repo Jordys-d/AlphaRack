@@ -191,19 +191,21 @@ background-image: url("C:\Users\Marvi\Downloads\payment gateway\images\tienda-de
 
 /** Media Queries **/
 @media (max-width: 1024px) {
-    .Wrapper {
+    .container {
         width: 60%;
         padding: 25px 40px;
     }
 }
 
 @media (max-width: 768px) {
-    .Wrapper {
-        width: 80%;
+    .container {
+        width: 70%;
         padding: 20px 30px;
     }
 
     .navar ul {
+        width: 100%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -216,7 +218,8 @@ background-image: url("C:\Users\Marvi\Downloads\payment gateway\images\tienda-de
         padding: 8px 15px;
     }
 
-    .rating-container {
+    .inputBox {
+        display:flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
@@ -226,7 +229,7 @@ background-image: url("C:\Users\Marvi\Downloads\payment gateway\images\tienda-de
 }
 
 @media (max-width: 480px) {
-    .Wrapper {
+    .container {
         width: 95%;
         padding: 15px 20px;
     }
