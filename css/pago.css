@@ -204,8 +204,10 @@ background-image: url("C:\Users\Marvi\Downloads\payment gateway\images\tienda-de
     }
 
     .navar ul {
+        display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
+        justify-content: center;
         gap: 10px;
     }
 
