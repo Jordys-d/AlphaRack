@@ -222,6 +222,7 @@ legend {
     .Wrapper{
         width: 80%;
         margin: 50px 10px auto;
+        height: 80%;
     }
 
     .rating-container{
